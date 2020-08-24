@@ -1,0 +1,482 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R1
+U 1 1 5F284D0E
+P 3500 2950
+F 0 "R1" H 3559 2996 50  0000 L CNN
+F 1 "10K" H 3559 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3500 2950 50  0001 C CNN
+F 3 "~" H 3500 2950 50  0001 C CNN
+	1    3500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5F2852CF
+P 5900 4550
+F 0 "R4" H 5959 4596 50  0000 L CNN
+F 1 "10K" H 5959 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 4550 50  0001 C CNN
+F 3 "~" H 5900 4550 50  0001 C CNN
+	1    5900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5F285EDA
+P 6300 4550
+F 0 "R5" H 6359 4596 50  0000 L CNN
+F 1 "10K" H 6359 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6300 4550 50  0001 C CNN
+F 3 "~" H 6300 4550 50  0001 C CNN
+	1    6300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5F286126
+P 5800 3350
+F 0 "R3" V 5750 3450 50  0000 C CNN
+F 1 "10K" V 5800 3350 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5800 3350 50  0001 C CNN
+F 3 "~" H 5800 3350 50  0001 C CNN
+	1    5800 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5F2866C9
+P 5700 4850
+F 0 "R6" V 5650 4950 50  0000 C CNN
+F 1 "0" V 5700 4850 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5700 4850 50  0001 C CNN
+F 3 "~" H 5700 4850 50  0001 C CNN
+	1    5700 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Mini-DIN-6 J3
+U 1 1 5F28FB10
+P 8800 5300
+F 0 "J3" H 8800 5667 50  0000 C CNN
+F 1 "PS/2 Socket" H 8800 5576 50  0000 C CNN
+F 2 "My Libraries:Connector_Mini-DIN_Female_6Pin_2rows" H 8800 5300 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 8800 5300 50  0001 C CNN
+	1    8800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Female J2
+U 1 1 5F29143D
+P 8750 3350
+F 0 "J2" H 8930 3396 50  0000 L CNN
+F 1 "Joystick Port" H 8930 3305 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_EdgeMount_P2.77mm" H 8750 3350 50  0001 C CNN
+F 3 " ~" H 8750 3350 50  0001 C CNN
+	1    8750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 5200 9450 5200
+Wire Wire Line
+	9100 5400 9450 5400
+Text Label 9450 5200 2    50   ~ 0
+PS2CLK
+Text Label 9450 5400 2    50   ~ 0
+PS2DAT
+Wire Wire Line
+	9100 5300 9450 5300
+Text Label 9450 5300 2    50   ~ 0
+GND
+$Comp
+L power:GND #PWR0101
+U 1 1 5F293AD3
+P 9100 5750
+F 0 "#PWR0101" H 9100 5500 50  0001 C CNN
+F 1 "GND" H 9105 5577 50  0000 C CNN
+F 2 "" H 9100 5750 50  0001 C CNN
+F 3 "" H 9100 5750 50  0001 C CNN
+	1    9100 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 5750 8900 5750
+Text Label 8900 5750 0    50   ~ 0
+GND
+Wire Wire Line
+	8500 5300 8300 5300
+$Comp
+L power:+5V #PWR0102
+U 1 1 5F295B7E
+P 8300 5300
+F 0 "#PWR0102" H 8300 5150 50  0001 C CNN
+F 1 "+5V" H 8315 5473 50  0000 C CNN
+F 2 "" H 8300 5300 50  0001 C CNN
+F 3 "" H 8300 5300 50  0001 C CNN
+	1    8300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5900 8600 5900
+$Comp
+L power:+5V #PWR0103
+U 1 1 5F29799F
+P 8600 5900
+F 0 "#PWR0103" H 8600 5750 50  0001 C CNN
+F 1 "+5V" H 8615 6073 50  0000 C CNN
+F 2 "" H 8600 5900 50  0001 C CNN
+F 3 "" H 8600 5900 50  0001 C CNN
+	1    8600 5900
+	1    0    0    -1  
+$EndComp
+Text Label 8800 5900 2    50   ~ 0
+VCC
+Wire Wire Line
+	8450 2950 8150 2950
+Wire Wire Line
+	8450 3050 8150 3050
+Wire Wire Line
+	8450 3150 8150 3150
+Wire Wire Line
+	8450 3250 8150 3250
+Wire Wire Line
+	8450 3350 8150 3350
+Wire Wire Line
+	8450 3450 8150 3450
+Wire Wire Line
+	8450 3550 8150 3550
+Wire Wire Line
+	8450 3650 8150 3650
+Wire Wire Line
+	8450 3750 8150 3750
+Text Label 8150 3650 0    50   ~ 0
+POTX
+Text Label 8150 3050 0    50   ~ 0
+FIRE
+Text Label 8150 3750 0    50   ~ 0
+POTY
+Text Label 8150 3550 0    50   ~ 0
+RIGHT
+Text Label 8150 3350 0    50   ~ 0
+LEFT
+Text Label 8150 3450 0    50   ~ 0
+GND
+Text Label 8150 3250 0    50   ~ 0
+VCC
+Text Label 8150 2950 0    50   ~ 0
+UP
+Text Label 8150 3150 0    50   ~ 0
+DOWN
+$Comp
+L Connector:AVR-ISP-6 J1
+U 1 1 5F29C87D
+P 6750 2050
+F 0 "J1" H 6421 2146 50  0000 R CNN
+F 1 "AVR-ISP-6" H 6421 2055 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" V 6500 2100 50  0001 C CNN
+F 3 " ~" H 5475 1500 50  0001 C CNN
+	1    6750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F29E33A
+P 6650 2500
+F 0 "#PWR0104" H 6650 2250 50  0001 C CNN
+F 1 "GND" H 6655 2327 50  0000 C CNN
+F 2 "" H 6650 2500 50  0001 C CNN
+F 3 "" H 6650 2500 50  0001 C CNN
+	1    6650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F29E343
+P 6650 1500
+F 0 "#PWR0105" H 6650 1350 50  0001 C CNN
+F 1 "+5V" H 6665 1673 50  0000 C CNN
+F 2 "" H 6650 1500 50  0001 C CNN
+F 3 "" H 6650 1500 50  0001 C CNN
+	1    6650 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1500 6650 1550
+Wire Wire Line
+	6650 2450 6650 2500
+Text Label 7400 2150 2    50   ~ 0
+RESET
+Wire Wire Line
+	7400 2150 7150 2150
+Text Label 7400 1850 2    50   ~ 0
+MISO
+Wire Wire Line
+	7400 1850 7150 1850
+Text Label 7400 1950 2    50   ~ 0
+MOSI
+Wire Wire Line
+	7400 1950 7150 1950
+Text Label 7400 2050 2    50   ~ 0
+SCK
+Wire Wire Line
+	7400 2050 7150 2050
+Text Label 5500 4050 2    50   ~ 0
+DOWN
+Text Label 5500 3850 2    50   ~ 0
+UP
+Text Label 5500 3950 2    50   ~ 0
+FIRE
+Text Label 5500 4150 2    50   ~ 0
+LEFT
+Text Label 5500 4250 2    50   ~ 0
+RIGHT
+Wire Wire Line
+	5500 3850 5200 3850
+Wire Wire Line
+	5200 3950 5500 3950
+Wire Wire Line
+	5200 4050 5500 4050
+Wire Wire Line
+	5200 4150 5500 4150
+Wire Wire Line
+	5200 4250 5500 4250
+Text Label 5500 3650 2    50   ~ 0
+SCK
+Text Label 5500 3550 2    50   ~ 0
+MISO
+Text Label 5500 3450 2    50   ~ 0
+MOSI
+Wire Wire Line
+	5500 3450 5200 3450
+Wire Wire Line
+	5200 3550 5500 3550
+Wire Wire Line
+	5500 3650 5200 3650
+Wire Wire Line
+	4600 5650 4600 5700
+Wire Wire Line
+	4600 5700 4650 5700
+Wire Wire Line
+	4700 5700 4700 5650
+$Comp
+L power:GND #PWR0106
+U 1 1 5F2A97E7
+P 4650 5700
+F 0 "#PWR0106" H 4650 5450 50  0001 C CNN
+F 1 "GND" H 4655 5527 50  0000 C CNN
+F 2 "" H 4650 5700 50  0001 C CNN
+F 3 "" H 4650 5700 50  0001 C CNN
+	1    4650 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 5700
+Wire Wire Line
+	4650 5700 4700 5700
+Wire Wire Line
+	4600 2850 4600 2800
+Wire Wire Line
+	4600 2800 4650 2800
+Wire Wire Line
+	4700 2800 4700 2850
+$Comp
+L power:+5V #PWR0107
+U 1 1 5F2AB28B
+P 4650 2800
+F 0 "#PWR0107" H 4650 2650 50  0001 C CNN
+F 1 "+5V" H 4665 2973 50  0000 C CNN
+F 2 "" H 4650 2800 50  0001 C CNN
+F 3 "" H 4650 2800 50  0001 C CNN
+	1    4650 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 2800
+Wire Wire Line
+	4650 2800 4700 2800
+Wire Wire Line
+	5200 4550 5400 4550
+Wire Wire Line
+	5200 4650 5400 4650
+$Comp
+L MCU_Microchip_ATmega:ATmega8-16AU U1
+U 1 1 5F282D28
+P 4600 4250
+F 0 "U1" H 4850 5700 50  0000 C CNN
+F 1 "ATmega8-16AU" H 5100 5600 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 4600 4250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2486-8-bit-avr-microcontroller-atmega8_l_datasheet.pdf" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	1    0    0    -1  
+$EndComp
+Text Label 6800 4750 2    50   ~ 0
+PS2CLK
+Wire Wire Line
+	5900 4650 5900 4750
+Wire Wire Line
+	5200 4750 5900 4750
+$Comp
+L power:+5V #PWR0108
+U 1 1 5F2BBFD4
+P 5900 4400
+F 0 "#PWR0108" H 5900 4250 50  0001 C CNN
+F 1 "+5V" H 5915 4573 50  0000 C CNN
+F 2 "" H 5900 4400 50  0001 C CNN
+F 3 "" H 5900 4400 50  0001 C CNN
+	1    5900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4400 5900 4450
+Wire Wire Line
+	5200 4850 5600 4850
+Text Label 6800 4850 2    50   ~ 0
+POTX
+Text Label 6800 4950 2    50   ~ 0
+PS2DAT
+Wire Wire Line
+	5900 4750 6800 4750
+Connection ~ 5900 4750
+Wire Wire Line
+	5800 4850 6800 4850
+Wire Wire Line
+	5200 4950 6300 4950
+Wire Wire Line
+	6300 4650 6300 4950
+Connection ~ 6300 4950
+Wire Wire Line
+	6300 4950 6800 4950
+$Comp
+L power:+5V #PWR0109
+U 1 1 5F2CA1CD
+P 6300 4400
+F 0 "#PWR0109" H 6300 4250 50  0001 C CNN
+F 1 "+5V" H 6315 4573 50  0000 C CNN
+F 2 "" H 6300 4400 50  0001 C CNN
+F 3 "" H 6300 4400 50  0001 C CNN
+	1    6300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4400 6300 4450
+Wire Wire Line
+	5700 3350 5200 3350
+Wire Wire Line
+	5900 3350 6800 3350
+Text Label 6800 3350 2    50   ~ 0
+POTX
+$Comp
+L Device:R_Small R2
+U 1 1 5F2D2437
+P 5650 3250
+F 0 "R2" V 5600 3350 50  0000 C CNN
+F 1 "10K" V 5650 3250 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5650 3250 50  0001 C CNN
+F 3 "~" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 3250 5550 3250
+Wire Wire Line
+	5750 3250 6800 3250
+Text Label 6800 3250 2    50   ~ 0
+POTY
+Wire Wire Line
+	4000 3150 3500 3150
+Wire Wire Line
+	3500 3050 3500 3150
+Connection ~ 3500 3150
+Wire Wire Line
+	3500 3150 3300 3150
+$Comp
+L power:+5V #PWR0110
+U 1 1 5F2DD725
+P 3500 2800
+F 0 "#PWR0110" H 3500 2650 50  0001 C CNN
+F 1 "+5V" H 3515 2973 50  0000 C CNN
+F 2 "" H 3500 2800 50  0001 C CNN
+F 3 "" H 3500 2800 50  0001 C CNN
+	1    3500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2800 3500 2850
+Wire Wire Line
+	4000 3750 3700 3750
+Text Label 3700 3750 0    50   ~ 0
+VCC
+$Comp
+L power:GND #PWR0111
+U 1 1 5F2E2E21
+P 2250 3250
+F 0 "#PWR0111" H 2250 3000 50  0001 C CNN
+F 1 "GND" H 2255 3077 50  0000 C CNN
+F 2 "" H 2250 3250 50  0001 C CNN
+F 3 "" H 2250 3250 50  0001 C CNN
+	1    2250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3150 2250 3150
+Wire Wire Line
+	2250 3150 2250 3250
+$Comp
+L Device:C_Small C1
+U 1 1 5F28E935
+P 4050 2500
+F 0 "C1" H 4142 2546 50  0000 L CNN
+F 1 "10u" H 4142 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4050 2500 50  0001 C CNN
+F 3 "~" H 4050 2500 50  0001 C CNN
+	1    4050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5F28F275
+P 4050 2400
+F 0 "#PWR01" H 4050 2250 50  0001 C CNN
+F 1 "+5V" H 4065 2573 50  0000 C CNN
+F 2 "" H 4050 2400 50  0001 C CNN
+F 3 "" H 4050 2400 50  0001 C CNN
+	1    4050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F28F898
+P 4050 2600
+F 0 "#PWR02" H 4050 2350 50  0001 C CNN
+F 1 "GND" H 4055 2427 50  0000 C CNN
+F 2 "" H 4050 2600 50  0001 C CNN
+F 3 "" H 4050 2600 50  0001 C CNN
+	1    4050 2600
+	1    0    0    -1  
+$EndComp
+Text Label 3800 3150 2    50   ~ 0
+RESET
+$Comp
+L C64-Mouse-Adapter-rescue:SW_SPST-freetronics_schematic SW1
+U 1 1 5F2E14CD
+P 2800 3150
+F 0 "SW1" H 2800 3460 70  0000 C CNN
+F 1 "RESET" H 2800 3339 70  0000 C CNN
+F 2 "My Libraries:Pushbutton-SMD-TL3305-2-Pad" H 2800 3150 60  0001 C CNN
+F 3 "" H 2800 3150 60  0000 C CNN
+	1    2800 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
